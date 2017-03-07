@@ -19,6 +19,8 @@ int main(int argc, char *argv[])
         cout << argv[0] << endl;
         cout << "input=<input txtfile>" << endl;
         cout << "          required." << endl;
+        cout << "input=<output txtfile>" << endl;
+        cout << "          optional. default=../data/vectors/" << endl;
         cout << "d=<dimension: length of the output vectors>" << endl;
         cout << "          optional. default=20" << endl;
         cout << "OW=<the observation window of a cascades, infections after OW are ignored>" << endl;
@@ -38,6 +40,7 @@ int main(int argc, char *argv[])
 
     map<string, string> kwargs;
     kwargs["input"] = "../data/cascade-synthentic-graph.txt";
+    kwargs["output"] = "../data/vectors/";
     kwargs["d"] = "20"; 
     kwargs["OW"] = "1.01"; 
     kwargs["stepsize"] = "0.0001";
@@ -74,7 +77,7 @@ int main(int argc, char *argv[])
             chrono::duration_cast<seconds>(diff).count()
          << " seconds " << endl;
 
-    algo.output(); // write the A, B matrix to file
+    algo.output(kwargs["output"]); // write the A, B matrix to file
 
     return 0;
 }

@@ -218,11 +218,11 @@ void HierarInfer::infer(int dimension, double OW,
     cout << "========Final LogLikelihood=" << loglikelihood() << "========" << endl;
 }
 
-void HierarInfer::output()
+void HierarInfer::output(string output_path)
 {
-  cout << "output the file to " << string("../data/vectors/") << endl;
+  cout << "output the file to " << output_path << endl;
   Matrix2::instance().printMaxComponent();
-  Matrix2::instance().writeMat( string("../data/vectors/") ); 
+  Matrix2::instance().writeMat( output_path ); 
 }
 
 //=================================

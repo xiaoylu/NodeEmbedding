@@ -73,9 +73,9 @@ void Matrix2::getMostInfluencialSites(vector<pair<int,double> >& ret, int k)
 void Matrix2::writeMat(string path)
 {
   ofstream outfile_A;
-  outfile_A.open((path + "TopProp_A.csv").c_str(), ofstream::out);
+  outfile_A.open((path + "A.csv").c_str(), ofstream::out);
   ofstream outfile_B;
-  outfile_B.open((path + "TopProp_B.csv").c_str(), ofstream::out);
+  outfile_B.open((path + "B.csv").c_str(), ofstream::out);
 
   cout << "Writing matrix A,B to";
   //=========header=======
@@ -102,6 +102,6 @@ void Matrix2::writeMat(string path)
     outfile_A << "\n";
     outfile_B << "\n";
   }
-  cout << "  to " << path << "TopProp_A.csv" << endl;
-  cout << "  and " << path << "TopProp_B.csv" << endl;
+  cout << "  to " << path << "A.csv" << endl;
+  cout << "  and " << path << "B.csv" << endl;
 }

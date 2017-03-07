@@ -53,7 +53,7 @@ public:
 
   double loglikelihood();
 
-  void output();
+  void output(string output_path);
 
   //-------------------
   void split(const string &s, char delim, vector<string> &elems);
