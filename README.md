@@ -1,7 +1,7 @@
 # hierarInfer
 # NodeEmbedding
 
-Our paper ("Scalable Prediction of Global Online Media News Virality")[https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8438324] is published at IEEE Transactions on Computational Social Systems.
+Our paper ["Scalable Prediction of Global Online Media News Virality"](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8438324) is published at IEEE Transactions on Computational Social Systems.
 ```
 @article{lu2018scalable,
   title={Scalable Prediction of Global Online Media News Virality},
